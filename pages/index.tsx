@@ -26,7 +26,7 @@ export default function Home() {
           <Link href="https://github.com/joaotelesk" target="_blank">
             <img src="/github.svg" alt="imagem github" className={styles.img} />
           </Link>
-          <Link href="/www.linkedin.com/in/joaotelesk" target="_blank">
+          <Link href="https:www.linkedin.com/in/joaotelesk" target="_blank">
             <img
               src="/linkedin.svg"
               alt="imagem linkedin"
@@ -34,7 +34,7 @@ export default function Home() {
             />
           </Link>
         </div>
-        <footer className={styles.footer}>&copy; 2022 joaoteslesk</footer>
+        <footer className={styles.footer}>&copy; 2023 - joaoteslesk</footer>
       </main>
     </>
   );
