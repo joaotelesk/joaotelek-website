@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.inpt {
+  @apply text-2xl lg:text-2xl w-screen max-w-[700px] mt-10;
+}
