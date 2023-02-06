@@ -16,8 +16,13 @@ export default function Button({
   children,
   asChild,
   className,
+
   ...props
 }: ButtonProps) {
   const Comp = asChild ? Slot : "button";
-  return <Comp className={clsx(className, props)}>{children}</Comp>;
+  return (
+    <Comp className={clsx(className)} {...props}>
+      {children}
+    </Comp>
+  );
 }
