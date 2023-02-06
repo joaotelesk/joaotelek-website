@@ -1,6 +1,8 @@
-import { render, screen, fireEvent } from "@testing-library/react";
-
+// Components
 import Button from "./button";
+
+// Utilities
+import { render, screen, fireEvent } from "@testing-library/react";
 
 describe("<Button/>", () => {
   it("shoud in the document", async () => {
@@ -22,7 +24,7 @@ describe("<Button/>", () => {
     const link = await screen.getByAltText("imagem exemplo");
     expect(link).toBeInTheDocument();
   });
-  it("Performs click actions when receiving the function by prop", () => {
+  it("gets function and the executed", () => {
     const onClick = jest.fn();
     render(<Button onClick={onClick}>conteudo</Button>);
 
