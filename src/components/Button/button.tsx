@@ -12,7 +12,7 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLElement> {
   className?: string;
 }
 
-export default function Button({
+export function Button({
   children,
   asChild,
   className,

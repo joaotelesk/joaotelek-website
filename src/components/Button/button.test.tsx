@@ -1,5 +1,5 @@
 // Components
-import Button from "./button";
+import { Button } from "./Button";
 
 // Utilities
 import { render, screen, fireEvent } from "@testing-library/react";
