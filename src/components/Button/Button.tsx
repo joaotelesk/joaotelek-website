@@ -21,7 +21,13 @@ export function Button({
 }: ButtonProps) {
   const Comp = asChild ? Slot : "button";
   return (
-    <Comp className={clsx(className)} {...props}>
+    <Comp
+      className={clsx(
+        "bg-purple-500 rounded px-[18px] py-[10px] font-normal  text-sm text-white-500 flex items-center gap-4 w-auto justify-center",
+        className
+      )}
+      {...props}
+    >
       {children}
     </Comp>
   );

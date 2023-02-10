@@ -12,7 +12,7 @@ describe("<Button/>", () => {
 
     expect(button).toBeInTheDocument();
   });
-  it("it is  shound a component with link inside", async () => {
+  it("it is shound a component with link inside", async () => {
     render(
       <Button asChild>
         <a href="#">
