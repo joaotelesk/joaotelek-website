@@ -8,8 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --watch",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "start-storybook -p 6006 ",
+    "build-storybook": "build-storybook",
+    "storybook:css": "npx tailwindcss -i ./styles/global.css -o ./.storybook/global.css --watch"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.1",
