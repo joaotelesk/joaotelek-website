@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest --watch",
-    "storybook": "start-storybook -p 6006 ",
+    "storybook": "start-storybook -p 6006 --no-dll -s ./public ",
     "build-storybook": "build-storybook",
     "storybook:css": "npx tailwindcss -i ./styles/global.css -o ./.storybook/global.css --watch"
   },
