@@ -8,8 +8,7 @@ export default {
   title: "Components/Input",
   component: Input,
   args: {
-    placeholder: "seu nome",
-    value: "name",
+    placeholder: "Seu nome",
   },
 } as Meta<InputProps>;
 
