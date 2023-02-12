@@ -1,13 +1,19 @@
-import clsx from "clsx";
-import Link from "next/link";
-import { TelegramLogo } from "phosphor-react";
-import { useState } from "react";
+// Components
 import { Button } from "../Button/Button";
 import { CardImg } from "../CardImg/CardImg";
 import { Input } from "../Input/Input";
 import { InputArea } from "../InputArea/InputArea";
 import { Text } from "../Text/Text";
+import Link from "next/link";
+import { TelegramLogo } from "phosphor-react";
 
+// Utilities
+import clsx from "clsx";
+
+// Hooks
+import { useState } from "react";
+
+// Interfaces
 type FormValue = {
   name: string;
   email: string;
@@ -19,6 +25,8 @@ export interface FormProps {
   onSubmit: (values: FormValue) => void;
   className?: string;
 }
+
+// Variables
 const initState = {
   name: "",
   email: "",
