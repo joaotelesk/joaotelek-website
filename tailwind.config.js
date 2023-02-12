@@ -5,6 +5,11 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    screens: {
+      desktop: "1024px",
+      tablet: "768px",
+      mobile: { min: "280px", max: "487px" },
+    },
     fontSize: {
       xs: 14,
       sm: 16,
