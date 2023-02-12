@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import Link from "next/link";
 import { TelegramLogo } from "phosphor-react";
 import { useState } from "react";
 import { Button } from "../Button/Button";
@@ -90,10 +91,18 @@ export function Form({ onSubmit, className }: FormProps) {
             <TelegramLogo size={24} />
           </Button>
           <div className="flex">
-            <CardImg alt="logo linkedin" src="/linkedin-purple.svg" />
-            <CardImg alt="logo github" src="/github-purple.svg" />
-            <CardImg alt="logo whatsapp" src="/whatsapp-purple.svg" />
-            <CardImg alt="logo discord" src="/discord-purple.svg" />
+            <Link href="https://www.linkedin.com/in/joaotelesk">
+              <CardImg alt="logo linkedin" src="/linkedin-purple.svg" />
+            </Link>
+            <Link href="https://github.com/joaotelesk">
+              <CardImg alt="logo github" src="/github-purple.svg" />
+            </Link>
+            <Link href="https://api.whatsapp.com/send?phone=5585988277110">
+              <CardImg alt="logo whatsapp" src="/whatsapp-purple.svg" />
+            </Link>
+            <Link href="https://discord.gg/cDK55jn6">
+              <CardImg alt="logo discord" src="/discord-purple.svg" />
+            </Link>
           </div>
         </div>
       </form>
