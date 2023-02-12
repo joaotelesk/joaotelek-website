@@ -52,7 +52,7 @@ export function Form({ onSubmit, className }: FormProps) {
       <form
         onSubmit={handleSubmit}
         className={clsx(
-          "max-w-[600px] bg-black-200 rounded px-7 py-8 flex flex-col text-center items-center",
+          "max-w-[550px] bg-black-200 rounded px-7 py-8 flex flex-col text-center items-center",
           className
         )}
       >
@@ -98,7 +98,7 @@ export function Form({ onSubmit, className }: FormProps) {
             <p className="text-lg text-bold">Enviar mensagem</p>
             <TelegramLogo size={24} />
           </Button>
-          <div className="flex">
+          <div className="flex gap-2">
             <Link href="https://www.linkedin.com/in/joaotelesk">
               <CardImg alt="logo linkedin" src="/linkedin-purple.svg" />
             </Link>
