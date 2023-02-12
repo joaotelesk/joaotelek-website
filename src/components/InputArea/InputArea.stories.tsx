@@ -8,8 +8,7 @@ export default {
   title: "Components/InputArea",
   component: InputArea,
   args: {
-    
-    value: "seu nome",
+    placeholder: "Mensagem",
   },
 } as Meta<InputAreaProps>;
 

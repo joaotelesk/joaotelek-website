@@ -1,18 +1,22 @@
-import { render, fireEvent } from "@testing-library/react";
+// Components
 import { InputArea } from "./InputArea";
+
+// Utilities
+import { fireEvent, render, screen } from "@testing-library/react";
+
 describe("<InputArea/>", () => {
-  test("renders the component", () => {
-    const { getByRole } = render(<InputArea value="" />);
-    const inputArea = getByRole("textbox");
-    expect(inputArea).toBeInTheDocument();
-  });
-  test("calls onChange function when text is typed", () => {
-    const handleChange = jest.fn();
-    const { getByRole } = render(
-      <InputArea value="" onChange={handleChange} />
+  test("render the component", async () => {
+    const onChange = jest.fn();
+    const value = "Initial value";
+    render(
+      <InputArea onChange={onChange} value={value} placeholder="Mensagem" />
     );
-    const inputArea = getByRole("textbox");
-    fireEvent.change(inputArea, { target: { value: "Test" } });
-    expect(handleChange).toHaveBeenCalledTimes(1);
+
+    const input = await screen.getByRole("textbox");
+    expect(input).toBeInTheDocument();
+    expect(input).toHaveValue(value);
+
+    fireEvent.change(input, { target: { value: "Test value" } });
+    expect(onChange).toHaveBeenCalled();
   });
 });
