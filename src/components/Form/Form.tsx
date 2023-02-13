@@ -12,6 +12,7 @@ import clsx from "clsx";
 
 // Hooks
 import { useState } from "react";
+import { Logo } from "../Logo/Logo";
 
 // Interfaces
 type FormValue = {
@@ -56,11 +57,9 @@ export function Form({ onSubmit, className }: FormProps) {
           className
         )}
       >
-        <div className="flex mb-4 items-center gap-2 mt-5">
-          <img src="/logo.svg" alt="minha logo" sizes="34px" />
-          <Text className="font-bold text-sm text-white-500">João Teles</Text>
-        </div>
-        <div className="mb-8 w-4/5 flex justify-center">
+        <Logo size={35} className="font-bold text-sm text-white-500" />
+
+        <div className="mb-10 w-4/5 flex justify-center">
           <Text className="text-white-300 font-normal">
             Me diga o que você precisa, o propósito do projeto ou os problemas
             que vou solucionar. Tentarei the responder dentro de 24 horas.
@@ -94,7 +93,7 @@ export function Form({ onSubmit, className }: FormProps) {
           className="mb-5"
         />
         <div className="flex justify-between w-full">
-          <Button className="w-3/6">
+          <Button type="submit" className="w-3/6">
             <p className="text-lg text-bold">Enviar mensagem</p>
             <TelegramLogo size={24} />
           </Button>

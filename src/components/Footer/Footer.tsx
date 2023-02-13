@@ -49,6 +49,7 @@ export function Footer({ className }: FooterProps) {
           </Text>
           <div className="hidden tablet:block">
             <Button
+              type="button"
               className="bg-black-200"
               onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
