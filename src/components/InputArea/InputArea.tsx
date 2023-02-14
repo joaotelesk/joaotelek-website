@@ -36,7 +36,7 @@ export function InputArea({
         value={value}
         id={value}
         cols={30}
-        rows={10}
+        rows={7}
         placeholder={placeholder}
       />
     </>

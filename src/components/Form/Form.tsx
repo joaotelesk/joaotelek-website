@@ -53,20 +53,20 @@ export function Form({ onSubmit, className }: FormProps) {
       <form
         onSubmit={handleSubmit}
         className={clsx(
-          "max-w-[550px] bg-black-200 rounded px-7 py-8 flex flex-col text-center items-center mobile:px-3",
+          "max-w-[550px] bg-black-200 rounded px-5 py-5 flex flex-col text-center items-center mobile:px-3",
           className
         )}
       >
         <Logo size={35} className="font-bold text-sm text-white-500" />
 
-        <div className="mb-10 w-4/5 flex justify-center">
+        <div className="mb-8 w-4/5 flex justify-center">
           <Text className="text-white-300 font-normal">
             Me diga o que você precisa, o propósito do projeto ou os problemas
             que vou solucionar. Tentarei the responder dentro de 24 horas.
           </Text>
         </div>
 
-        <div className="flex gap-5 desktop:flex-row justify-between mb-5 w-full tablet:flex flex-col  ">
+        <div className="flex gap-3 desktop:flex-row justify-between mb-3 w-full tablet:flex flex-col  ">
           <Input
             value={values.name}
             onChange={(value) => handleChange("name", value)}
@@ -84,13 +84,13 @@ export function Form({ onSubmit, className }: FormProps) {
           value={values.subject}
           onChange={(value) => handleChange("subject", value)}
           placeholder="Assunto"
-          className="mb-5"
+          className="mb-3"
         />
         <InputArea
           value={values.message}
           onChange={(value) => handleChange("message", value)}
           placeholder="Mensagem"
-          className="mb-5"
+          className="mb-3"
         />
         <div className=" flex w-full tablet:flex-row justify-between items-center desktop:flex flex-col">
           <Button type="submit" className="w-4/6 table:w-full">
