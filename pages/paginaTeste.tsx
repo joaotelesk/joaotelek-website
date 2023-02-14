@@ -2,6 +2,7 @@ import Head from "next/head";
 import { CardItems } from "../src/components/CardItems/CardItems";
 import { Footer } from "../src/components/Footer/Footer";
 import { Form } from "../src/components/Form/Form";
+import { Header } from "../src/components/Header/Header";
 
 export default function Teste() {
   return (
@@ -14,7 +15,8 @@ export default function Teste() {
         />
       </Head>
       <div className="flex flex-col  items-center justify-between h-screen w-full">
-        <div className="flex flex-wrap gap-8 text-center mt-10 justify-center items-center mb-40 px-3">
+        <Header />
+        <div className="flex flex-wrap gap-8 text-center justify-center items-center mb-40 px-3">
           <CardItems />
           <CardItems />
           <CardItems />
