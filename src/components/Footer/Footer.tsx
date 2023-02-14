@@ -23,7 +23,7 @@ export function Footer({ className }: FooterProps) {
         )}
       >
         <div className="w-full h-2 bg-gradient-to-r from-green-500 via-blue-500  via-purple-600 to-pink-200"></div>
-        <div className="tablet:w-5/6 h-auto py-5 flex justify-between items-center mobile:w-auto  px-1">
+        <div className=" px-5 tablet:w-full h-auto py-5 flex justify-between items-center mobile:w-auto ">
           <div className="hidden desktop:flex gap-2 ">
             <Link href="https://www.linkedin.com/in/joaotelesk">
               <CardImg
@@ -42,7 +42,7 @@ export function Footer({ className }: FooterProps) {
               <CardImg alt="logo discord" src="/discord-purple.svg" />
             </Link>
           </div>
-          <Text className="text-md mobile:text-xs mt-2 ">
+          <Text className="text-md mobile:text-xs mt-2 text-center">
             Copyright 2023 <span className="text-purple-500">{"<"}</span>
             joaotelesk<span className="text-purple-500">{"/>"}</span> - Todos os
             direitos reservados

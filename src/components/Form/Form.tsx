@@ -53,7 +53,7 @@ export function Form({ onSubmit, className }: FormProps) {
       <form
         onSubmit={handleSubmit}
         className={clsx(
-          "max-w-[550px] bg-black-200 rounded px-7 py-8 flex flex-col text-center items-center",
+          "max-w-[550px] bg-black-200 rounded px-7 py-8 flex flex-col text-center items-center mobile:px-3",
           className
         )}
       >
@@ -66,7 +66,7 @@ export function Form({ onSubmit, className }: FormProps) {
           </Text>
         </div>
 
-        <div className="flex justify-between mb-5 w-full">
+        <div className="flex gap-5 desktop:flex-row justify-between mb-5 w-full tablet:flex flex-col  ">
           <Input
             value={values.name}
             onChange={(value) => handleChange("name", value)}
@@ -76,7 +76,7 @@ export function Form({ onSubmit, className }: FormProps) {
             value={values.email}
             onChange={(value) => handleChange("email", value)}
             placeholder="Endereço de e-mail"
-            className="ml-7"
+            className=""
           />
         </div>
 
@@ -92,8 +92,8 @@ export function Form({ onSubmit, className }: FormProps) {
           placeholder="Mensagem"
           className="mb-5"
         />
-        <div className="flex justify-between w-full">
-          <Button type="submit" className="w-3/6">
+        <div className=" flex w-full tablet:flex-row justify-between items-center desktop:flex flex-col">
+          <Button type="submit" className="w-4/6 table:w-full">
             <p className="text-lg text-bold">Enviar mensagem</p>
             <TelegramLogo size={24} />
           </Button>
