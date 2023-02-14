@@ -11,7 +11,7 @@ import { MenuMob } from "./MenuMob/MenuMob";
 import { Navbar } from "./NavBar/NavBar";
 
 export interface HeaderProps {
-  className: string;
+  className?: string;
 }
 
 export function Header({ className }: HeaderProps) {
