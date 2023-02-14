@@ -57,7 +57,9 @@ export function Form({ onSubmit, className }: FormProps) {
           className
         )}
       >
-        <Logo size={35} className="font-bold text-sm text-white-500" />
+        <div className="mb-3">
+          <Logo size={35} className="font-bold text-sm text-white-500" />
+        </div>
 
         <div className="mb-8 w-4/5 flex justify-center">
           <Text className="text-white-300 font-normal">
