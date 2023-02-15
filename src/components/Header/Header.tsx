@@ -1,15 +1,21 @@
-import clsx from "clsx";
+// Components
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { TelegramLogo } from "phosphor-react";
-import { useState } from "react";
 import { Button } from "../Button/Button";
 import { CardImg } from "../CardImg/CardImg";
 import { Logo } from "../Logo/Logo";
 import { MenuMob } from "./MenuMob/MenuMob";
 import { Navbar } from "./NavBar/NavBar";
 
+// Utilities
+import clsx from "clsx";
+
+// Hooks
+import { useState } from "react";
+import { useRouter } from "next/router";
+
+// Interfaces
 export interface HeaderProps {
   className?: string;
 }
