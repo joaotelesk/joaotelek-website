@@ -34,11 +34,11 @@ export function MenuMob({ close }: MenuMobProps) {
           </div>
           <Navbar className="flex flex-col w-full gap-10" text-center />
         </div>
-        <div className=" flex w-screen  tablet:flex-row justify-between items-center desktop:flex flex-col  mt-20 gap-4">
+        <div className=" w-screen  flex flex-col  mt-20 gap-4 items-center">
           <Button
             role="button"
             aria-label="button de entrar na pagina de contato"
-            className="w-7/12 table:w-full"
+            className="w-6/12"
             onClick={() => router.push("")}
           >
             <p className="text-lg text-bold ">Contato</p>
