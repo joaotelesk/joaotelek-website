@@ -1,11 +1,17 @@
+// Components
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { TelegramLogo } from "phosphor-react";
 import { Button } from "../../Button/Button";
 import { CardImg } from "../../CardImg/CardImg";
 import { Heading } from "../../Heading/Heading";
 import { Navbar } from "../NavBar/NavBar";
 
+// Utilities
+
+// Hooks
+import { useRouter } from "next/router";
+
+// interfaces
 interface MenuMobProps {
   close: React.Dispatch<React.SetStateAction<boolean>>;
 }
@@ -17,7 +23,7 @@ export function MenuMob({ close }: MenuMobProps) {
   }
   return (
     <>
-      <div className="fixed top-0 right-0 h-screen w-screen bg-black-300  z-200 transform transition-transform duration-5000 ease-in-out ">
+      <div className=" h-screen w-screen bg-black-300 fixed right-0 top-0 z-200">
         <div className="flex flex-col px-5 py-5">
           <div className="flex justify-between mb-10 items-center">
             <Heading size="sm" className="font-bold">
@@ -32,13 +38,13 @@ export function MenuMob({ close }: MenuMobProps) {
               X
             </Button>
           </div>
-          <Navbar className="flex flex-col w-full gap-10" text-center />
+          <Navbar className="flex flex-col w-full gap-10" />
         </div>
-        <div className=" w-screen  flex flex-col  mt-20 gap-4 items-center">
+        <div className=" w-full  flex flex-col  mt-20 gap-4 items-center">
           <Button
             role="button"
             aria-label="button de entrar na pagina de contato"
-            className="w-6/12"
+            className="w-[215px]"
             onClick={() => router.push("")}
           >
             <p className="text-lg text-bold ">Contato</p>

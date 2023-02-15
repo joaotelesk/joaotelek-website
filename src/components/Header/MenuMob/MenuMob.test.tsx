@@ -1,6 +1,8 @@
-import { render, screen, fireEvent } from "@testing-library/react";
-import { useRouter } from "next/router";
+// Components
 import { MenuMob } from "./MenuMob";
+
+// Utilities
+import { render, screen } from "@testing-library/react";
 
 jest.mock("next/router", () => ({
   useRouter: () => ({ push: jest.fn() }),
