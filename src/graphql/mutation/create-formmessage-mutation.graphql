@@ -1,0 +1,12 @@
+mutation CreateFormMessageMutation(
+  $name: String!
+  $email: String!
+  $subject: String!
+  $message: String!
+) {
+  createFormMessage(
+    data: { name: $name, email: $email, subject: $subject, message: $message }
+  ) {
+    id
+  }
+}
