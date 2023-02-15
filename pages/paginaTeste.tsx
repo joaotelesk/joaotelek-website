@@ -14,7 +14,7 @@ export default function Teste() {
           content="Pagina de teste de responsividade dos componentes"
         />
       </Head>
-      <div className="flex flex-col  items-center justify-between h-screen w-full">
+      <div className="flex flex-col text-center items-center justify-between h-screen w-full">
         <Header />
         <div className="flex flex-wrap gap-8 text-center justify-center items-center mb-40 px-3">
           <CardItems />
