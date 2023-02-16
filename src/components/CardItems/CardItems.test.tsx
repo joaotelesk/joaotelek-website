@@ -6,7 +6,7 @@ import { render, screen } from "@testing-library/react";
 
 describe("<CardItems/>", () => {
   it("renders the form correctly", () => {
-    const { container } = render(<CardItems />);
+    const { container } = render(<CardItems slug="" title="" urlSite=""/>);
 
     // Verifica se a div de CardItems foi renderizada
     const divContainer = container.querySelector("div");
