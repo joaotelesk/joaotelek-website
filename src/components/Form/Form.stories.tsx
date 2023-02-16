@@ -8,11 +8,7 @@ export default {
   title: "Components/Form",
   component: Form,
 
-  args: {
-    onSubmit: (values) => {
-      console.log(values);
-    },
-  },
+  args: {},
 } as Meta<FormProps>;
 
 export const Default: StoryObj<FormProps> = {};

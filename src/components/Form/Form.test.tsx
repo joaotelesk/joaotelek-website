@@ -3,19 +3,17 @@ import { Form } from "./Form";
 
 // Utilities
 import { render, screen } from "@testing-library/react";
-import userEvent from "@testing-library/user-event";
 
 describe("<Form/>", () => {
   it("renders the form correctly", () => {
-    const { container } = render(<Form onSubmit={() => {}} />);
+    const { container } = render(<Form />);
     // Verifica se a tag form foi renderizada
     const form = container.querySelector("form");
     expect(form).toBeInTheDocument();
   });
 
   it("renders form elements correctly", () => {
-    const mockOnSubmit = jest.fn();
-    render(<Form onSubmit={mockOnSubmit} />);
+    render(<Form />);
 
     // Verifica se os campos foram renderizados
     const name = screen.getByPlaceholderText("Seu nome");
