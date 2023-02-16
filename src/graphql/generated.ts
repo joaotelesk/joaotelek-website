@@ -4442,7 +4442,7 @@ export type GetProjectBySlugQuery = { __typename?: 'Query', project?: { __typena
 export type GetProjectsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetProjectsQuery = { __typename?: 'Query', projects: Array<{ __typename?: 'Project', id: string, title: string, slug: string }> };
+export type GetProjectsQuery = { __typename?: 'Query', projects: Array<{ __typename?: 'Project', id: string, urlImg: string, title: string, urlSite: string, urlGithub?: string | null, urlFigma?: string | null, slug: string }> };
 
 
 export const CreateFormMessageMutationDocument = gql`
@@ -4526,7 +4526,11 @@ export const GetProjectsDocument = gql`
     query GetProjects {
   projects(orderBy: title_ASC, stage: PUBLISHED) {
     id
+    urlImg
     title
+    urlSite
+    urlGithub
+    urlFigma
     slug
   }
 }
