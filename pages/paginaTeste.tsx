@@ -25,8 +25,9 @@ export default function Teste() {
         </div>
 
         <div className="mx-4">
-          <Form onSubmit={() => {}} />
+          <Form />
         </div>
+
         <Footer className="mt-10" />
       </div>
     </>

@@ -13,6 +13,8 @@ import clsx from "clsx";
 // Hooks
 import { useState } from "react";
 import { Logo } from "../Logo/Logo";
+import { useCreateFormMessageMutationMutation } from "../../graphql/generated";
+import { Toast } from "../Toast/Toast";
 
 // Interfaces
 type FormValue = {
@@ -23,7 +25,6 @@ type FormValue = {
 };
 
 export interface FormProps {
-  onSubmit: (values: FormValue) => void;
   className?: string;
 }
 
@@ -35,16 +36,33 @@ const initState = {
   message: "",
 };
 
-export function Form({ onSubmit, className }: FormProps) {
+export function Form({ className }: FormProps) {
+  const [createFormMessage, { loading }] =
+    useCreateFormMessageMutationMutation();
   const [values, setValues] = useState<FormValue>(initState);
+  const [toastIsOpen, setToastIsOpen] = useState(false);
 
   function handleChange(key: keyof FormValue, value: string) {
     setValues({ ...values, [key]: value });
   }
 
-  function handleSubmit(event: React.FormEvent) {
+  async function handleSubmit(event: React.FormEvent) {
     event.preventDefault();
-    onSubmit(values);
+    const response = await createFormMessage({
+      variables: {
+        name: values.name,
+        email: values.email,
+        subject: values.subject,
+        message: values.message,
+      },
+    });
+    if (response) {
+      // Exibir mensagem de confirmação
+      setToastIsOpen(true);
+      setTimeout(() => {
+        setToastIsOpen(false);
+      }, 5000);
+    }
     setValues(initState);
   }
 
@@ -73,12 +91,13 @@ export function Form({ onSubmit, className }: FormProps) {
             value={values.name}
             onChange={(value) => handleChange("name", value)}
             placeholder="Seu nome"
+            required
           />
           <Input
             value={values.email}
             onChange={(value) => handleChange("email", value)}
             placeholder="Endereço de e-mail"
-            className=""
+            required
           />
         </div>
 
@@ -87,15 +106,21 @@ export function Form({ onSubmit, className }: FormProps) {
           onChange={(value) => handleChange("subject", value)}
           placeholder="Assunto"
           className="mb-3"
+          required
         />
         <InputArea
           value={values.message}
           onChange={(value) => handleChange("message", value)}
           placeholder="Mensagem"
           className="mb-3"
+          required
         />
         <div className=" flex w-full tablet:flex-row justify-between items-center desktop:flex flex-col">
-          <Button type="submit" className="w-4/6 table:w-full">
+          <Button
+            type="submit"
+            className="w-4/6 table:w-full"
+            disabled={loading}
+          >
             <p className="text-lg text-bold">Enviar mensagem</p>
             <TelegramLogo size={24} />
           </Button>
@@ -115,6 +140,11 @@ export function Form({ onSubmit, className }: FormProps) {
           </div>
         </div>
       </form>
+      {toastIsOpen && (
+        <div className="flex justify-center">
+          <Toast />
+        </div>
+      )}
     </>
   );
 }
