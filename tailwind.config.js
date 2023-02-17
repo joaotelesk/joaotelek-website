@@ -8,7 +8,7 @@ module.exports = {
     screens: {
       desktop: "1024px",
       tablet: "768px",
-      mobile: { min: "280px", max: "487px" },
+      mobile: "280px",
     },
     fontSize: {
       xs: 14,
