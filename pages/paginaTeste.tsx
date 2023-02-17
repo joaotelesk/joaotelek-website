@@ -21,7 +21,7 @@ export default function Teste() {
           />
         </Head>
         <div className="flex flex-col items-center justify-between h-screen w-full">
-          <Header />
+          <Header className="mb-10" />
           <div className="flex flex-wrap gap-8 text-center justify-center items-center mb-40 px-3">
             {[...Array(4)].map(
               (
@@ -57,7 +57,7 @@ export default function Teste() {
         />
       </Head>
       <div className="flex flex-col items-center justify-between h-screen w-full">
-        <Header />
+        <Header className="mb-10" />
         <div className="flex flex-wrap gap-8 text-center justify-center items-center mb-40 px-3">
           {data?.projects?.map((project) => (
             <CardItems
