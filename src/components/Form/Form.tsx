@@ -97,6 +97,7 @@ export function Form({ className }: FormProps) {
             value={values.email}
             onChange={(value) => handleChange("email", value)}
             placeholder="Endereço de e-mail"
+            type="email"
             required
           />
         </div>
