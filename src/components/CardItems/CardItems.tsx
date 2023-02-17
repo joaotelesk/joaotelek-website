@@ -5,6 +5,7 @@ import Link from "next/link";
 
 // Utilities
 import clsx from "clsx";
+import Image from "next/image";
 
 // Interfaces
 export interface CarItemsPros {
@@ -34,12 +35,12 @@ export function CardItems({
           className
         )}
       >
-        <img
+        <Image
           src={`${urlImg}`}
           alt={title}
-          className="w-full h-48 bg-black-200 rounded mb-3"
-          width="192"
-          height="280"
+          className="w-full h-48 rounded mb-3 bg-cover"
+          width="1000"
+          height="1000"
         />
 
         <Heading size="sm" className="mx-4 mb-3">
