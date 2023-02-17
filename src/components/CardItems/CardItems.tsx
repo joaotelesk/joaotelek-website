@@ -35,7 +35,7 @@ export function CardItems({
           className
         )}
       >
-        <Image
+        <img
           src={`${urlImg}`}
           alt={title}
           className="w-full h-48 rounded mb-3 bg-cover"
