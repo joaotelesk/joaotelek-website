@@ -6,6 +6,13 @@ body {
   @apply bg-black-300;
 }
 
+.btn-primary {
+  @apply rounded px-[18px] py-[10px] font-normal  text-sm text-white-500 flex items-center gap-4 w-auto justify-center bg-purple-500;
+}
+.btn-secondary {
+  @apply bg-black-200  rounded px-3 py-3 font-bold w-auto h-auto hover:bg-purple-500;
+}
+
 .elemento:hover {
   transition: 0.7s;
   filter: drop-shadow(0px 4px 20px #8726f8);
