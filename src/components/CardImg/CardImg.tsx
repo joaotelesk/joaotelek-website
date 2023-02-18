@@ -1,8 +1,11 @@
+// Components
+import Image from "next/image";
 import { Slot } from "@radix-ui/react-slot";
 
+// Utilities
 import clsx from "clsx";
-import Image from "next/image";
 
+// Interfaces
 export interface CardImgProps {
   size?: number;
   asChild?: boolean;
@@ -27,7 +30,7 @@ export function CardImg({
       <Comp
         type="button"
         className={clsx(
-          "bg-black-200 rounded px-3 py-3 font-bold w-auto h-auto  text-xs text-white-500 flex flex-col items-center justify-center justify-center pointer-events-none",
+          "group bg-black-200 rounded px-3 py-3 font-bold w-auto h-auto  text-xs text-white-500 flex flex-col items-center justify-center ",
           className
         )}
       >
