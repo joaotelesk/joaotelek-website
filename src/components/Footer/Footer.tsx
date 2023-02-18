@@ -1,12 +1,14 @@
 // Components
 import Link from "next/link";
-import { CaretUp } from "phosphor-react";
 import { Button } from "../Button/Button";
-import { CardImg } from "../CardImg/CardImg";
 import { Text } from "../Text/Text";
+import clsx from "clsx";
 
 // Utilities
-import clsx from "clsx";
+import { GrLinkedinOption } from "react-icons/gr";
+import { AiFillGithub } from "react-icons/ai";
+import { FaWhatsapp, FaDiscord } from "react-icons/fa";
+import { RiArrowUpSLine } from "react-icons/ri";
 
 // interfaces
 export interface FooterProps {
@@ -14,7 +16,6 @@ export interface FooterProps {
 }
 
 export function Footer({ className }: FooterProps) {
-  //w-full flex justify-between items-center desktop:w-5/6"
   return (
     <>
       <footer
@@ -27,28 +28,58 @@ export function Footer({ className }: FooterProps) {
         <div className=" w-full  flex justify-center items-center py-5  px-5 h-auto desktop:w-5/6 desktop:px-0">
           <div className="flex w-auto justify-between items-center desktop:w-full tablet:w-full">
             <div className="hidden desktop:flex gap-2 ">
-              <Link href="https://www.linkedin.com/in/joaotelesk">
-                <CardImg
-                  alt="logo linkedin"
-                  src="/linkedin-purple.svg"
+              <Link
+                href="https://www.linkedin.com/in/joaotelesk"
+                target="_blank"
+              >
+                <Button
+                  role="button"
+                  aria-label="clique me para linkedin"
+                  type="button"
+                  icon={GrLinkedinOption}
                   size={20}
+                  className="btn-secondary"
+                  colorNormal="text-purple-500"
+                  colorHover="text-white-500"
                 />
               </Link>
-              <Link href="https://github.com/joaotelesk">
-                <CardImg alt="logo github" src="/github-purple.svg" size={20} />
-              </Link>
-              <Link href="https://api.whatsapp.com/send?phone=5585988277110">
-                <CardImg
-                  alt="logo whatsapp"
-                  src="/whatsapp-purple.svg"
+              <Link href="https://github.com/joaotelesk" target="_blank">
+                <Button
+                  role="button"
+                  aria-label="clique me para github"
+                  type="button"
+                  icon={AiFillGithub}
                   size={20}
+                  className="btn-secondary"
+                  colorNormal="text-purple-500"
+                  colorHover="text-white-500"
                 />
               </Link>
-              <Link href="https://discord.gg/cDK55jn6">
-                <CardImg
-                  alt="logo discord"
-                  src="/discord-purple.svg"
+              <Link
+                href="https://api.whatsapp.com/send?phone=5585988277110"
+                target="_blank"
+              >
+                <Button
+                  role="button"
+                  aria-label="clique me para whatsapp"
+                  type="button"
+                  icon={FaWhatsapp}
                   size={20}
+                  className="btn-secondary"
+                  colorNormal="text-purple-500"
+                  colorHover="text-white-500"
+                />
+              </Link>
+              <Link href="https://discord.gg/cDK55jn6" target="_blank">
+                <Button
+                  role="button"
+                  aria-label="clique me para discord"
+                  type="button"
+                  icon={FaDiscord}
+                  size={20}
+                  className="btn-secondary"
+                  colorNormal="text-purple-500"
+                  colorHover="text-white-500"
                 />
               </Link>
             </div>
@@ -60,13 +91,14 @@ export function Footer({ className }: FooterProps) {
             <div className="hidden tablet:block">
               <Button
                 role="button"
-                aria-label="clique me"
+                aria-label="clique me para subir"
                 type="button"
-                className="bg-black-200"
+                className="btn-secondary hover:bg-black-300"
+                icon={RiArrowUpSLine}
+                colorHover="text-white-200"
+                size={20}
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-              >
-                <CaretUp size={20} color="black" />
-              </Button>
+              />
             </div>
           </div>
         </div>

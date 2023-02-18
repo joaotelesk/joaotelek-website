@@ -1,7 +1,11 @@
+// Components
 import Link from "next/link";
-import { useRouter } from "next/router";
 import { Text } from "../../Text/Text";
 
+// Hooks
+import { useRouter } from "next/router";
+
+// interfaces
 export interface NavbarProps {
   className?: string;
   classNameLink?: string;
@@ -14,8 +18,8 @@ export function Navbar({ className, classNameLink }: NavbarProps) {
       <nav className={className}>
         {[
           ["Início", "/"],
-          ["Serviços", "/paginaTeste"],
-          ["Portfólio", ""],
+          ["Serviços", ""],
+          ["Portfólio", "/portfolio"],
           ["Skills", ""],
         ].map(([title, url]) => (
           <Link

@@ -1,14 +1,15 @@
 // Components
 import { Button } from "../Button/Button";
-import { CardImg } from "../CardImg/CardImg";
 import { Input } from "../Input/Input";
 import { InputArea } from "../InputArea/InputArea";
 import { Text } from "../Text/Text";
 import Link from "next/link";
-import { TelegramLogo } from "phosphor-react";
 
 // Utilities
 import clsx from "clsx";
+import { GrLinkedinOption } from "react-icons/gr";
+import { AiFillGithub } from "react-icons/ai";
+import { FaWhatsapp, FaDiscord, FaTelegramPlane } from "react-icons/fa";
 
 // Hooks
 import { useState } from "react";
@@ -71,7 +72,7 @@ export function Form({ className }: FormProps) {
       <form
         onSubmit={handleSubmit}
         className={clsx(
-          "max-w-[550px] bg-black-200 rounded px-5 py-5 flex flex-col text-center items-center mobile:px-3",
+          "w-auto bg-black-200 rounded px-5 py-5 flex flex-col text-center items-center mobile:px-3",
           className
         )}
       >
@@ -118,25 +119,66 @@ export function Form({ className }: FormProps) {
         />
         <div className=" flex w-full tablet:flex-row justify-between items-center desktop:flex flex-col">
           <Button
+            role="button"
+            aria-label="clique me para enviar"
             type="submit"
-            className="w-4/6 table:w-full"
+            className="btn-primary w-4/6 table:w-full"
             disabled={loading}
+            icon={FaTelegramPlane}
           >
             <p className="text-lg text-bold">Enviar mensagem</p>
-            <TelegramLogo size={24} />
           </Button>
           <div className="flex gap-2">
-            <Link href="https://www.linkedin.com/in/joaotelesk">
-              <CardImg alt="logo linkedin" src="/linkedin-purple.svg" />
+            <Link href="https://www.linkedin.com/in/joaotelesk" target="_blank">
+              <Button
+                role="button"
+                aria-label="clique me para linkedin"
+                type="button"
+                icon={GrLinkedinOption}
+                size={20}
+                className="btn-secondary"
+                colorNormal="text-purple-500"
+                colorHover="text-white-500"
+              />
             </Link>
-            <Link href="https://github.com/joaotelesk">
-              <CardImg alt="logo github" src="/github-purple.svg" />
+            <Link href="https://github.com/joaotelesk" target="_blank">
+              <Button
+                role="button"
+                aria-label="clique me para github"
+                type="button"
+                icon={AiFillGithub}
+                size={20}
+                className="btn-secondary"
+                colorNormal="text-purple-500"
+                colorHover="text-white-500"
+              />
             </Link>
-            <Link href="https://api.whatsapp.com/send?phone=5585988277110">
-              <CardImg alt="logo whatsapp" src="/whatsapp-purple.svg" />
+            <Link
+              href="https://api.whatsapp.com/send?phone=5585988277110"
+              target="_blank"
+            >
+              <Button
+                role="button"
+                aria-label="clique me para whatsapp"
+                type="button"
+                icon={FaWhatsapp}
+                size={20}
+                className="btn-secondary"
+                colorNormal="text-purple-500"
+                colorHover="text-white-500"
+              />
             </Link>
-            <Link href="https://discord.gg/cDK55jn6">
-              <CardImg alt="logo discord" src="/discord-purple.svg" />
+            <Link href="https://discord.gg/cDK55jn6" target="_blank">
+              <Button
+                role="button"
+                aria-label="clique me para discord"
+                type="button"
+                icon={FaDiscord}
+                size={20}
+                className="btn-secondary"
+                colorNormal="text-purple-500"
+                colorHover="text-white-500"
+              />
             </Link>
           </div>
         </div>
