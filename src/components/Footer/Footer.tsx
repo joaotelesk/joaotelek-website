@@ -83,7 +83,7 @@ export function Footer({ className }: FooterProps) {
                 />
               </Link>
             </div>
-            <Text className="text-md mobile:text-xs mt-2 text-center">
+            <Text className="text-md text-white-400 mobile:text-xs mt-2 text-center">
               Copyright 2023 <span className="text-purple-500">{"<"}</span>
               joaotelesk<span className="text-purple-500">{"/>"}</span> - Todos
               os direitos reservados
