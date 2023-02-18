@@ -25,7 +25,7 @@ export function Navbar({ className, classNameLink }: NavbarProps) {
           <Link
             href={url}
             key={title}
-            className={`font-bold  ${
+            className={`font-normal  ${
               router.asPath === url
                 ? "text-white-500 border-purple-500 border-b-2  pb-2"
                 : "text-white-200 border-white-200 border-b-2  pb-2 desktop:border-none"
@@ -33,7 +33,7 @@ export function Navbar({ className, classNameLink }: NavbarProps) {
           >
             <Text
               size="lg"
-              className={`font-bold ${
+              className={`font-normal  ${
                 router.asPath === url ? "text-white-500" : "text-white-200"
               }`}
             >

@@ -27,7 +27,7 @@ export default function Portfolio() {
             <Heading size="lg" className="text-center ">
               Portfólio
             </Heading>
-            <Text size="lg" className="text-white-300 font-normal">
+            <Text size="lg" className="text-white-400 ">
               As linguagens e ferramentas que eu mais gosto de utilizar são:
               Next.js, React JS, Redux, Redux-saga, Typescript, Node.js, HTML5,
               CSS, Tailwind, Styled-componet, SASS, Nest.js, Docker, Graphql.
