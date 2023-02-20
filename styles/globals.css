@@ -12,6 +12,30 @@ body {
 .btn-secondary {
   @apply bg-black-200  rounded px-3 py-3 font-bold w-auto h-auto hover:bg-purple-500;
 }
+.border-card {
+  @apply w-[315px] h-[300px] bg-gradient-to-b from-green-500 via-blue-500  via-purple-600 to-pink-200 px-1 py-1 rounded-[46px];
+}
+.card {
+  @apply w-full h-full bg-black-200 rounded-[46px] px-3 py-6;
+}
+.containerPage {
+  @apply flex flex-col items-center justify-between h-screen w-full;
+}
+.imagem-de-fundo {
+  background-image: url("/fundo.svg");
+  background-repeat: no-repeat;
+}
+.gradient {
+  background: linear-gradient(
+    131.7deg,
+    #57e5a9 10.44%,
+    #02a8ce 26.17%,
+    #8257e5 85.9%,
+    #dcc4e0 95.98%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .elemento:hover {
   transition: 0.7s;
@@ -44,4 +68,33 @@ body {
 
 .scrollbar-thumb-gray-500::-webkit-scrollbar-thumb {
   background-color: #000000;
+}
+
+@keyframes waving {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.hand-wave {
+  display: inline-block;
+}
+
+.animate-waving {
+  animation: waving 1.5s ease-in-out infinite;
 }
