@@ -43,7 +43,7 @@ export function CardItems({
           height="1000"
         />
 
-        <Heading size="sm" className="mx-4 mb-3">
+        <Heading size="sm" className="mx-4 mb-3 text-white-400 font-normal">
           {title}
         </Heading>
         <div className="flex gap-3 justify-center mb-5">

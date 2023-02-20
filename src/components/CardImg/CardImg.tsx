@@ -24,11 +24,10 @@ export function CardImg({
   alt,
   className,
 }: CardImgProps) {
-  const Comp = asChild ? Slot : "button";
+  const Comp = asChild ? Slot : "div";
   return (
     <>
       <Comp
-        type="button"
         className={clsx(
           "group bg-black-200 rounded px-3 py-3 font-bold w-auto h-auto  text-xs text-white-500 flex flex-col items-center justify-center ",
           className

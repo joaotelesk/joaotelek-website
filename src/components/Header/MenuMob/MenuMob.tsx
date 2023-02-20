@@ -25,10 +25,10 @@ export function MenuMob({ close }: MenuMobProps) {
   }
   return (
     <>
-      <div className=" h-screen w-screen bg-black-300 fixed right-0 top-0 z-200">
+      <div className=" h-screen w-screen bg-black-300 fixed right-0 top-0 z-20">
         <div className="flex flex-col px-5 py-5">
           <div className="flex justify-between mb-10 items-center">
-            <Heading size="sm" className="font-bold">
+            <Heading size="sm" className="font-bold text-white-500">
               Menu
             </Heading>
             <Button
@@ -44,16 +44,17 @@ export function MenuMob({ close }: MenuMobProps) {
           </div>
           <Navbar className="flex flex-col w-full gap-10" />
         </div>
-        <div className=" w-full  flex flex-col  mt-20 gap-4 items-center">
+        <div className=" w-screen  flex flex-col  mt-20 gap-2 items-center">
           <Button
             role="button"
             icon={FaTelegramPlane}
             aria-label="button de entrar na pagina de contato"
-            className="btn-primary"
+            className="btn-primary w-20"
             onClick={() => router.push("/contato")}
           >
-            <p className="text-lg text-bold ">Contato</p>
+            Contato
           </Button>
+
           <div className="flex gap-2">
             <Link href="https://www.linkedin.com/in/joaotelesk" target="_blank">
               <Button
