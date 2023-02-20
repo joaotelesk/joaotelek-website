@@ -49,7 +49,7 @@ export default function Skills() {
             </Text>
           </div>
 
-          <div className=" w-auto flex gap-3 px-3 justify-start flex-wrap  desktop:w-2/4 ">
+          <div className=" w-auto flex px-0 gap-1 justify-start flex-wrap  desktop:w-2/4 desktop:px-5 desktop:gap-3 ">
             <CardImg
               className="w-[100px] h-[100px]"
               src="/html5.svg"

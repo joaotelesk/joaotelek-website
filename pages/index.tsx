@@ -40,7 +40,7 @@ export default function Home() {
               </div>
               <div className="w-[552px] mb-2">
                 <Text size="lg" className="font-regular text-white-300">
-                  Com ênfase em desenvolvimento web, utilizo metodologia baseado
+                  Com ênfase em desenvolvimento web. Utilizo metodologia baseada
                   em TDD, acessibilidade e SEO para criar soluções inovadoras e
                   testáveis.
                 </Text>
@@ -96,7 +96,8 @@ export default function Home() {
                 <img
                   src="/desenvolvimento.png"
                   width="230"
-                  height="30"
+                  height="168"
+                  alt="imagem de desenvolviemnto de software"
                   className="relative top-[-90px]"
                 />
                 <div className="relative top-[-90px] text-center">
@@ -116,7 +117,8 @@ export default function Home() {
                 <img
                   src="/ui.png"
                   width="230"
-                  height="30"
+                  height="160"
+                  alt="imamgem de UI/UX"
                   className="relative top-[-90px]"
                 />
                 <div className="relative top-[-90px] text-center">
@@ -133,32 +135,37 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="w-full  desktop:w-5/6 mt-10  desktop:h-[80vh] flex desktop:mt-16 ">
+          <section className="w-full  desktop:w-5/6 mt-5  desktop:h-[80vh] flex desktop:mt-16 ">
             <div className="flex imagem-de-fundo  bg-top  flex-col w-full items-center desktop:w-2/5 desktop:flex-col  desktop:bg-none">
-              <div className="w-64 h-64 rounded-full">
-                <img width={300} src={"/profile.png"} />
+              <div className="w-32 h-32 desktop:w-64 desktop:h-64 rounded-full">
+                <img
+                  width="270"
+                  height="270"
+                  src="/profile.png"
+                  alt="imagem profile"
+                />
               </div>
-              <div className="w-4/5 flex flex-col items-center gap-6 desktop:hidden">
-                <Heading size="sm" className="text-white-500 font-bold mt-5 ">
+              <div className="w-4/5 flex flex-col items-center gap-3 desktop:hidden">
+                <Heading size="sm" className="text-white-500 font-bold mt-2 ">
                   Me chamo João Teles{" "}
                   <span className="animate-waving hand-wave z-10">👋</span> ,
                   sou <span className="gradient">Desenvolvedor Full-Stack</span>{" "}
                   e <span className="text-purple-500">UI/UX</span>
                 </Heading>
 
-                <Text size="lg" className="font-regular text-white-300">
-                  Com ênfase em desenvolvimento web, utilizo metodologia baseado
+                <Text size="md" className="font-regular text-white-300">
+                  Com ênfase em desenvolvimento web. Utilizo metodologia baseada
                   em TDD, acessibilidade e SEO para criar soluções inovadoras e
                   testáveis.
                 </Text>
 
-                <Text size="lg" className="font-regular text-white-300">
-                  Atualmente estou a procura de uma oportunidade para trabalhar
+                <Text size="md" className="font-regular text-white-300">
+                  Atualmente, estou à procura de uma oportunidade para trabalhar
                   como desenvolvedor júnior ou estagiário, onde possa aplicar
-                  todos os meus conhecimentos , na qual possa continuar
-                  evoluindo em minha carreira.
+                  todos os meus conhecimentos e continuar evoluindo em minha
+                  carreira.
                 </Text>
-                <div className="w-44 mt-10 mb-10">
+                <div className="w-44  mb-5">
                   <Button
                     size={20}
                     icon={BsFileEarmarkArrowDown}
@@ -177,22 +184,22 @@ export default function Home() {
               <div className="mt-10 px-10 flex flex-col gap-5">
                 <Text size="lg" className="text-white-300 font-normal">
                   Me chamo João Teles, sou desenvolvedor Full-Stack e UX/UI com
-                  ênfase em desenvolvimento web, utilizando as tecnologias como
-                  JavaScript, Typescript, React, Next e Node, utilizo
-                  metodologia baseado em TDD, acessibilidade e SEO para
-                  desenvolver soluções inovaras e estáveis.
+                  ênfase em desenvolvimento web, utilizando tecnologias como
+                  JavaScript, TypeScript, React, Next e Node. Utilizo
+                  metodologia baseada em TDD, acessibilidade e SEO para
+                  desenvolver soluções inovadoras e estáveis.
                 </Text>
                 <Text size="lg" className="text-white-300 font-normal">
-                  Atualmente estou a procura de uma oportunidade para trabalhar
+                  Atualmente, estou à procura de uma oportunidade para trabalhar
                   como desenvolvedor júnior ou estagiário, onde possa aplicar
-                  todos os meus conhecimentos , na qual possa continuar
-                  evoluindo em minha carreira.
+                  todos os meus conhecimentos e continuar evoluindo em minha
+                  carreira.
                 </Text>
-                <div className="w-44 mt-10">
+                <div className="w-44 mt-10 ">
                   <Button
                     size={20}
                     icon={BsFileEarmarkArrowDown}
-                    className="btn-primary"
+                    className="btn-primary "
                     onClick={handleDownload}
                   >
                     Currículo
