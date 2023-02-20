@@ -19,18 +19,32 @@ export default function Portfolio() {
         <meta name="description" content="Pagina de contato" />
       </Head>
 
-      <div className="flex flex-col items-center justify-between h-screen w-full">
+      <div className="containerPage">
         <Header className="mb-5" />
 
-        <main className="flex flex-col w-4/5  gap-16 items-center ">
+        <main className="flex flex-col w-4/5  gap-10 items-center ">
           <div className="flex flex-col gap-5 desktop:w-3/4 justify-center items-center ">
-            <Heading size="lg" className="text-center ">
+            <Heading
+              size="lg"
+              className="text-center mb-5 text-white-500 font-bold"
+            >
               Portfólio
             </Heading>
-            <Text size="lg" className="text-white-400 ">
-              As linguagens e ferramentas que eu mais gosto de utilizar são:
-              Next.js, React JS, Redux, Redux-saga, Typescript, Node.js, HTML5,
-              CSS, Tailwind, Styled-componet, SASS, Nest.js, Docker, Graphql.
+            <Text size="lg" className="text-white-300 ">
+              Bem-vindo à minha página de portfólio! Aqui você encontrará uma
+              seleção dos meus projetos mais recentes e relevantes.
+              <p>
+                Ao clicar em qualquer um dos projetos, você será levado para uma
+                página detalhada, com informações mais específicas sobre o
+                projeto, incluindo objetivos, tecnologias utilizadas, desafios e
+                soluções encontradas ou se preferir basta clicar em um dos links
+                disponiveis no card do projeto.
+              </p>
+            </Text>
+            <Text size="lg" className="text-white-300 ">
+              Sinta-se à vontade para explorar meu portfólio e entre em contato
+              comigo se tiver alguma dúvida ou quiser discutir uma possível
+              colaboração!
             </Text>
           </div>
 
@@ -49,7 +63,7 @@ export default function Portfolio() {
           </div>
         </main>
 
-        <Footer className="mt-5" />
+        <Footer className="mt-10" />
       </div>
     </>
   );
