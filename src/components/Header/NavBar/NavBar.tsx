@@ -18,9 +18,9 @@ export function Navbar({ className, classNameLink }: NavbarProps) {
       <nav className={className}>
         {[
           ["Início", "/"],
-          ["Serviços", ""],
+          ["Serviços", "/servicos"],
           ["Portfólio", "/portfolio"],
-          ["Skills", ""],
+          ["Skills", "/skills"],
         ].map(([title, url]) => (
           <Link
             href={url}
