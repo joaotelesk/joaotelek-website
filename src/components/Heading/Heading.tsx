@@ -24,7 +24,6 @@ export function Heading({
     <>
       <Comp
         className={clsx(
-          "text-white-500 font-bold",
           {
             "text-lg": size === "sm",
             "text-xl": size === "md",
