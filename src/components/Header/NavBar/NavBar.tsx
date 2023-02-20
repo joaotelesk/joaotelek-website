@@ -8,10 +8,9 @@ import { useRouter } from "next/router";
 // interfaces
 export interface NavbarProps {
   className?: string;
-  classNameLink?: string;
 }
 
-export function Navbar({ className, classNameLink }: NavbarProps) {
+export function Navbar({ className }: NavbarProps) {
   const router = useRouter();
   return (
     <>
