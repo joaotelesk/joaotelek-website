@@ -5,8 +5,6 @@ import { Header } from "../src/components/Header/Header";
 import { Heading } from "../src/components/Heading/Heading";
 import { Text } from "../src/components/Text/Text";
 
-// Utilities
-
 export default function Servicos() {
   return (
     <>

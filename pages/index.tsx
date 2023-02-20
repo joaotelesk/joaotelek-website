@@ -1,14 +1,17 @@
 // Components
 import Head from "next/head";
-import { useRouter } from "next/router";
-import { FaTelegramPlane } from "react-icons/fa";
+import Image from "next/image";
 import { Button } from "../src/components/Button/Button";
-import { CardImg } from "../src/components/CardImg/CardImg";
 import { Footer } from "../src/components/Footer/Footer";
 import { Header } from "../src/components/Header/Header";
 import { Heading } from "../src/components/Heading/Heading";
-import { Logo } from "../src/components/Logo/Logo";
 import { Text } from "../src/components/Text/Text";
+
+// Hooks
+import { useRouter } from "next/router";
+
+// Utilities
+import { FaTelegramPlane } from "react-icons/fa";
 import { BsFileEarmarkArrowDown } from "react-icons/bs";
 
 export default function Home() {
@@ -93,7 +96,7 @@ export default function Home() {
             </Heading>
             <div className="flex gap-20 mt-16">
               <div className="w-[390px] h-[300px] bg-white-400 rounded-[52px] flex flex-col items-center px-2 py-2">
-                <img
+                <Image
                   src="/desenvolvimento.png"
                   width="230"
                   height="168"
@@ -114,7 +117,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="w-[390px] h-[300px] bg-white-400 rounded-[52px] flex flex-col items-center px-2 py-2">
-                <img
+                <Image
                   src="/ui.png"
                   width="230"
                   height="160"
@@ -138,7 +141,7 @@ export default function Home() {
           <section className="w-full  desktop:w-5/6 mt-5  desktop:h-[80vh] flex desktop:mt-16 ">
             <div className="flex imagem-de-fundo  bg-top  flex-col w-full items-center desktop:w-2/5 desktop:flex-col  desktop:bg-none">
               <div className="w-32 h-32 desktop:w-64 desktop:h-64 rounded-full">
-                <img
+                <Image
                   width="270"
                   height="270"
                   src="/profile.png"
