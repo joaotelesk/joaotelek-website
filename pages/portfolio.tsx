@@ -24,13 +24,10 @@ export default function Portfolio() {
 
         <main className="flex flex-col w-4/5  gap-10 items-center ">
           <div className="flex flex-col gap-5 desktop:w-3/4 justify-center items-center ">
-            <Heading
-              size="lg"
-              className="text-center mb-5 text-white-500 font-bold"
-            >
+            <Heading className="text-center mb-5 text-white-500 font-bold  text-md desktop:text-2xl">
               Portfólio
             </Heading>
-            <Text size="lg" className="text-white-300 ">
+            <Text className="text-white-300 desktop:text-md">
               Bem-vindo à minha página de portfólio! Aqui você encontrará uma
               seleção dos meus projetos mais recentes e relevantes.
               <p>
@@ -41,7 +38,7 @@ export default function Portfolio() {
                 disponiveis no card do projeto.
               </p>
             </Text>
-            <Text size="lg" className="text-white-300 ">
+            <Text className="text-white-300 desktop:text-md">
               Sinta-se à vontade para explorar meu portfólio e entre em contato
               comigo se tiver alguma dúvida ou quiser discutir uma possível
               colaboração!

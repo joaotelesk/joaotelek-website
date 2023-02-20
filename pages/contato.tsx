@@ -22,21 +22,18 @@ export default function Contato() {
         <Header className="mb-5" />
         <main className="w-5/6 flex flex-wrap mb-5 justify-between">
           <div className="pr-0 flex flex-col gap-5 w-full mb-4 desktop:w-2/4  desktop:pr-12 ">
-            <Heading
-              size="lg"
-              className="mb-3 text-center text-white-500 font-bold"
-            >
+            <Heading className="mb-3 text-center text-white-500 font-bold text-md desktop:text-2xl">
               Contato
             </Heading>
 
-            <Text size="lg" className="text-white-300 font-normal">
+            <Text className="text-white-300 font-normal desktop:text-md">
               Fique à vontade para entrar em contato comigo através desta
               página. Se você tiver alguma pergunta sobre meu trabalho,
               projetos, habilidades ou experiência, ficarei feliz em responder.
               Além disso, se você estiver procurando por um desenvolvedor para
               um novo projeto, ficarei feliz em discutir possíveis colaborações.
             </Text>
-            <Text size="lg" className="text-white-300 font-normal">
+            <Text className="text-white-300 font-normal desktop:text-md">
               Para entrar em contato, basta preencher o formulário nesta página
               com suas informações e a mensagem que deseja enviar. Prometo
               responder o mais rápido possível. Além disso, você também pode

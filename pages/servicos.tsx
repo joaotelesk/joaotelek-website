@@ -18,13 +18,10 @@ export default function Servicos() {
 
         <main className="flex flex-col w-4/5 gap-10 items-center ">
           <div className="flex flex-col gap-5 desktop:w-3/4 justify-center items-center ">
-            <Heading
-              size="lg"
-              className="text-center mb-5 text-white-500 font-bold"
-            >
+            <Heading className="text-center mb-5 text-white-500 font-bold text-md desktop:text-2xl">
               Serviços
             </Heading>
-            <Text size="lg" className="text-white-300 ">
+            <Text className="text-white-300  desktop:text-md">
               Bem-vindo à minha página de serviços, onde você encontrará uma
               visão geral dos serviços que ofereço como desenvolvedor. Ofereço
               soluções personalizadas para atender às necessidades do seu
@@ -51,10 +48,7 @@ export default function Servicos() {
             </div>
             <div className="border-card">
               <div className="card">
-                <Heading
-                  size="md"
-                  className="mb-6 text-white-500 font-semibold"
-                >
+                <Heading className="mb-6 text-white-500 font-semibold">
                   Site Institutional
                 </Heading>
                 <Text size="md" className="text-white-300 font-normal">
@@ -66,13 +60,10 @@ export default function Servicos() {
             </div>
             <div className="border-card">
               <div className="card">
-                <Heading
-                  size="md"
-                  className="mb-6 text-white-500 font-semibold"
-                >
+                <Heading className="mb-6 text-white-500 font-semibold">
                   Plataformas EAD
                 </Heading>
-                <Text size="md" className="text-white-300 font-normal">
+                <Text className="text-white-300 font-normal">
                   Precisa de uma plataforma EAD que seja a sua cara e não quer
                   ficar pagando um valor mensal por isso? Desenvolvo a sua área
                   de membros com Node.js.

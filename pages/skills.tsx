@@ -17,19 +17,16 @@ export default function Skills() {
         <Header className="mb-5" />
         <main className="w-5/6 flex flex-wrap mb-5 justify-between">
           <div className="pr-0 flex flex-col gap-5 w-full mb-10 desktop:w-2/4  desktop:pr-12 ">
-            <Heading
-              size="lg"
-              className="mb-5 text-center text-white-500 font-bold"
-            >
+            <Heading className="mb-5 text-center text-white-500 font-bold  text-md desktop:text-2xl">
               Skills
             </Heading>
 
-            <Text size="lg" className="text-white-300 font-normal">
+            <Text className="text-white-300 font-normal desktop:text-md">
               Atuo como Desenvolvedor Full-Stack, mas meu campo de maior
               expertise é o Front-End, no qual seleciono os melhores frameworks
               e ferramentas para usar em meus projetos.
             </Text>
-            <Text size="lg" className="text-white-300 font-normal">
+            <Text className="text-white-300 font-normal desktop:text-md">
               - Front-End:
               <p>
                 HTML, CSS, JavaScript, React, Next, Typescript, React Hooks,
@@ -37,13 +34,13 @@ export default function Skills() {
                 GraphQL.
               </p>
             </Text>
-            <Text size="lg" className="text-white-300 font-normal">
+            <Text className="text-white-300 font-normal desktop:text-md">
               - Back-End:
               <p>
                 Node.js, Express, MongoDB, Mongoose, Sequelize e PostgreSQL.
               </p>
             </Text>
-            <Text size="lg" className="text-white-300 font-normal">
+            <Text className="text-white-300 font-normal desktop:text-md">
               - Outras Ferramentas:
               <p>Docker, Jest, Git e Figma</p>
             </Text>
