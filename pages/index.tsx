@@ -141,7 +141,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="w-full  desktop:w-5/6 mt-5  desktop:min-h-screen flex desktop:mt-16 ">
+          <section className="w-full min-h-screen  desktop:w-5/6 mt-5 flex desktop:mt-16 ">
             <div className="flex imagem-de-fundo  bg-top  flex-col w-full items-center desktop:w-2/5 desktop:flex-col  desktop:bg-none">
               <div className="w-32 h-32 desktop:w-64 desktop:h-64 rounded-full">
                 <Image
