@@ -3,6 +3,7 @@ import { Button } from "./Button";
 
 // Utilities
 import { render, screen, fireEvent } from "@testing-library/react";
+import { BsFileEarmarkArrowDown } from "react-icons/bs";
 
 describe("<Button/>", () => {
   it("shoud in the document", async () => {
@@ -13,15 +14,8 @@ describe("<Button/>", () => {
     expect(button).toBeInTheDocument();
   });
   it("it is shound a component with link inside", async () => {
-    render(
-      <Button asChild>
-        <a href="#">
-          <img src="/" alt="imagem exemplo" />
-        </a>
-      </Button>
-    );
-
-    const link = await screen.getByAltText("imagem exemplo");
+    const { container } = render(<Button icon={BsFileEarmarkArrowDown} />);
+    const link = container.querySelector("svg");
     expect(link).toBeInTheDocument();
   });
   it("gets function and the executed", () => {

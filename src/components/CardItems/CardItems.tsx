@@ -5,7 +5,6 @@ import Link from "next/link";
 
 // Utilities
 import clsx from "clsx";
-import Image from "next/image";
 
 // Interfaces
 export interface CarItemsPros {

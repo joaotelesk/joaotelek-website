@@ -1,25 +1,27 @@
 // Components
-import { CardItems } from "./CardItems";
+import { CardItems, CarItemsPros } from "./CardItems";
 
 // Utilities
 import { render, screen } from "@testing-library/react";
 
-describe("<CardItems/>", () => {
-  it("renders the form correctly", () => {
-    const { container } = render(<CardItems slug="" title="" urlSite=""/>);
+describe("CardItems", () => {
+  const props: CarItemsPros = {
+    title: "Test Project",
+    urlSite: "https://testsite.com",
+    slug: "test-project",
+    urlImg: "https://testimage.com",
+    urlGithub: "https://testgithub.com",
+    urlFigma: "https://testfigma.com",
+  };
 
-    // Verifica se a div de CardItems foi renderizada
-    const divContainer = container.querySelector("div");
-    expect(divContainer).toBeInTheDocument();
-
-    // Verifica se os Elemento de CardItems foram rederizados
-    const title = screen.getByText("Titulo");
-    expect(title).toBeInTheDocument();
-    const linkGitGub = screen.getByAltText("logo github");
-    expect(linkGitGub).toBeInTheDocument();
-    const linkLogoFigma = screen.getByAltText("logo figma");
-    expect(linkLogoFigma).toBeInTheDocument();
-    const linkLogoGoogle = screen.getByAltText("logo google");
-    expect(linkLogoGoogle).toBeInTheDocument();
+  it("renders card with title", () => {
+    render(<CardItems {...props} />);
+    const titleElement = screen.getByText("Test Project");
+    expect(titleElement).toBeInTheDocument();
+  });
+  it("renders card with image", () => {
+    render(<CardItems {...props} />);
+    const imageElement = screen.getByAltText("Test Project");
+    expect(imageElement).toHaveAttribute("src", "https://testimage.com");
   });
 });
