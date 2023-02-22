@@ -28,10 +28,12 @@ export default function Home() {
         <title>João Teles - Full-Stack | Início</title>
         <meta name="description" content="Pagina incial do site" />
       </Head>
-      <div className="containerPage">
-        <Header />
+      <div className="">
         <main className="w-full flex flex-col items-center">
-          <section className="hidden desktop:flex w-full h-[76vh] imagem-de-fundo bg-right flex justify-center gap-5">
+          <section
+            className="hidden desktop:flex w-full min-h-[75vh]
+          imagem-de-fundo bg-right flex justify-center gap-5 "
+          >
             <div className=" w-5/6 flex flex-col gap-5">
               <div className="w-[633px]">
                 <Heading size="lg" className="text-white-500 font-bold mt-16 ">
@@ -61,7 +63,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="hidden desktop:flex w-full h-[100vh] bg-purple-500 flex flex-col items-center">
+          <section className="hidden desktop:flex w-full min-h-[90vh] bg-purple-500 flex flex-col items-center">
             <div className="bg-white-500 rounded w-5/6 h-[202px] relative top-[-101px] py-10 px-32 flex justify-between items-center">
               <div className="fle flex-col items-center text-center">
                 <Heading size="lg" className="text-black-500 font-bold">
@@ -138,7 +140,8 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section className="w-full  desktop:w-5/6 mt-5  desktop:h-[80vh] flex desktop:mt-16 ">
+
+          <section className="w-full  desktop:w-5/6 mt-5  desktop:min-h-[80vh] flex desktop:mt-16 ">
             <div className="flex imagem-de-fundo  bg-top  flex-col w-full items-center desktop:w-2/5 desktop:flex-col  desktop:bg-none">
               <div className="w-32 h-32 desktop:w-64 desktop:h-64 rounded-full">
                 <Image
@@ -198,7 +201,7 @@ export default function Home() {
                   todos os meus conhecimentos e continuar evoluindo em minha
                   carreira.
                 </Text>
-                <div className="w-44 mt-10 ">
+                <div className="w-44  ">
                   <Button
                     size={20}
                     icon={BsFileEarmarkArrowDown}
@@ -212,7 +215,6 @@ export default function Home() {
             </div>
           </section>
         </main>
-        <Footer />
       </div>
     </>
   );

@@ -13,9 +13,8 @@ export default function Skills() {
         <title>João Teles - Full-Stack | Skills</title>
         <meta name="description" content="Pagina de skills" />
       </Head>
-      <div className="containerPage">
-        <Header className="mb-5" />
-        <main className="w-5/6 flex flex-wrap mb-5 justify-between">
+      <div className="flex flex-col items-center mt-12 mb-14">
+        <main className="w-5/6  flex flex-wrap mb-5 justify-between">
           <div className="pr-0 flex flex-col gap-5 w-full mb-10 desktop:w-2/4  desktop:pr-12 ">
             <Heading className="mb-5 text-center text-white-500 font-bold  text-md desktop:text-2xl">
               Skills
@@ -168,7 +167,6 @@ export default function Skills() {
             />
           </div>
         </main>
-        <Footer />
       </div>
     </>
   );

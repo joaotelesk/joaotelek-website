@@ -13,9 +13,7 @@ export default function Servicos() {
         <meta name="description" content="Pagina de serviços" />
       </Head>
 
-      <div className="containerPage">
-        <Header className="mb-5" />
-
+      <div className="flex flex-col items-center mt-5 mb-10">
         <main className="flex flex-col w-4/5 gap-10 items-center ">
           <div className="flex flex-col gap-5 desktop:w-3/4 justify-center items-center ">
             <Heading className="text-center mb-5 text-white-500 font-bold text-md desktop:text-2xl">
@@ -72,8 +70,6 @@ export default function Servicos() {
             </div>
           </div>
         </main>
-
-        <Footer className="mt-7" />
       </div>
     </>
   );
