@@ -9,23 +9,41 @@ import { GrLinkedinOption } from "react-icons/gr";
 import { AiFillGithub } from "react-icons/ai";
 import { FaWhatsapp, FaDiscord, FaTelegramPlane } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
+import { motion } from "framer-motion";
 
 // Hooks
 import { useRouter } from "next/router";
 
 // interfaces
 interface MenuMobProps {
-  close: React.Dispatch<React.SetStateAction<boolean>>;
+  close: () => void;
+  isOpen: boolean;
 }
 
-export function MenuMob({ close }: MenuMobProps) {
+export function MenuMob({ close, isOpen }: MenuMobProps) {
   const router = useRouter();
+
   function handleClick() {
-    close(false);
+    setTimeout(() => {
+      close();
+    }, 500);
   }
+
+  const menu = {
+    open: { translateX: 0 },
+    closed: { translateX: "100%" },
+  };
+
   return (
     <>
-      <div className=" h-screen w-screen bg-black-300 fixed right-0 top-0 z-20">
+      <motion.div
+        initial="closed"
+        animate={isOpen ? "open" : "closed"}
+        exit={{ x: "-100" }}
+        variants={menu}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+        className={`h-screen w-screen bg-black-300 fixed right-0 top-0 z-20`}
+      >
         <div className="flex flex-col px-5 py-5">
           <div className="flex justify-between mb-10 items-center">
             <Heading size="sm" className="font-bold text-white-500">
@@ -110,7 +128,7 @@ export function MenuMob({ close }: MenuMobProps) {
           </div>
         </div>
         ;
-      </div>
+      </motion.div>
     </>
   );
 }

@@ -1,5 +1,4 @@
 // Components
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "../Button/Button";
 import { Logo } from "../Logo/Logo";
@@ -26,9 +25,7 @@ export function Header({ className }: HeaderProps) {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  function handleClick() {
-    setMenuOpen(!menuOpen);
-  }
+  const toggleMenu = () => setMenuOpen((prevOpen) => !prevOpen);
   return (
     <>
       <header
@@ -49,9 +46,10 @@ export function Header({ className }: HeaderProps) {
             className="bg-black-300 border-none desktop:hidden"
             colorNormal="text-purple-500"
             colorHover="text-purple-500"
-            onClick={handleClick}
+            onClick={toggleMenu}
           />
-          {menuOpen && <MenuMob close={handleClick} />}
+
+          {menuOpen && <MenuMob isOpen={menuOpen} close={toggleMenu} />}
 
           <Navbar className="hidden desktop:flex space-x-10  " />
           <div className="hidden desktop:flex gap-2">

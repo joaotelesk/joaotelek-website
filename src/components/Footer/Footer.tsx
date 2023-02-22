@@ -20,7 +20,7 @@ export function Footer({ className }: FooterProps) {
     <>
       <footer
         className={clsx(
-          "bg-black-300 w-full h-24  flex flex-col items-center",
+          "bg-black-300 w-full h-24  flex flex-col items-center ",
           className
         )}
       >
