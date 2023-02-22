@@ -2,8 +2,6 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Button } from "../src/components/Button/Button";
-import { Footer } from "../src/components/Footer/Footer";
-import { Header } from "../src/components/Header/Header";
 import { Heading } from "../src/components/Heading/Heading";
 import { Text } from "../src/components/Text/Text";
 
