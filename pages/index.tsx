@@ -28,8 +28,8 @@ export default function Home() {
         <title>João Teles - Full-Stack | Início</title>
         <meta name="description" content="Pagina incial do site" />
       </Head>
-      <div className="">
-        <main className="w-full flex flex-col items-center">
+      <div className="mt-10 mb-5">
+        <main className="w-full h-auto flex flex-col items-center">
           <section
             className="hidden desktop:flex w-full min-h-[75vh]
           imagem-de-fundo bg-right flex justify-center gap-5 "
@@ -141,7 +141,7 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="w-full min-h-[90vh]  desktop:w-5/6 mt-5 flex desktop:mt-16 ">
+          <section className="w-full min-h-[80vh]  desktop:w-5/6 mt-5 flex desktop:mt-16 ">
             <div className="flex imagem-de-fundo  bg-top  flex-col w-full items-center desktop:w-2/5 desktop:flex-col  desktop:bg-none">
               <div className="w-32 h-32 desktop:w-64 desktop:h-64 rounded-full">
                 <Image
@@ -171,7 +171,7 @@ export default function Home() {
                   todos os meus conhecimentos e continuar evoluindo em minha
                   carreira.
                 </Text>
-                <div className="w-44  mb-5">
+                <div className="w-44">
                   <Button
                     size={20}
                     icon={BsFileEarmarkArrowDown}

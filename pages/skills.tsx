@@ -13,9 +13,9 @@ export default function Skills() {
         <title>João Teles - Full-Stack | Skills</title>
         <meta name="description" content="Pagina de skills" />
       </Head>
-      <div className="flex flex-col items-center mt-12 mb-14">
-        <main className="w-5/6  flex flex-wrap mb-5 justify-between">
-          <div className="pr-0 flex flex-col gap-5 w-full mb-10 desktop:w-2/4  desktop:pr-12 ">
+      <div className="flex flex-col items-center mt-20">
+        <main className="w-5/6 min-h-[80vh] flex flex-wrap mb-5 justify-between">
+          <div className="pr-0 flex h-5/6 flex-col gap-5 w-full mb-10 desktop:w-2/4  desktop:pr-12 ">
             <Heading className="mb-5 text-center text-white-500 font-bold  text-md desktop:text-2xl">
               Skills
             </Heading>
@@ -45,7 +45,7 @@ export default function Skills() {
             </Text>
           </div>
 
-          <div className=" w-auto flex px-0 gap-1 justify-start flex-wrap  desktop:w-2/4 desktop:px-5 desktop:gap-3 ">
+          <div className=" w-auto h-5/6 flex px-0 gap-1 justify-start flex-wrap  desktop:w-2/4 desktop:px-5 desktop:gap-3 ">
             <CardImg
               className="w-[100px] h-[100px]"
               src="/html5.svg"

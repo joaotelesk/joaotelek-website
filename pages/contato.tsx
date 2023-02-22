@@ -18,9 +18,9 @@ export default function Contato() {
         <title>João Teles - Full-Stack | Contato</title>
         <meta name="description" content="Pagina de contato" />
       </Head>
-      <div className="flex flex-col items-center mt-12 mb-14">
-        <main className="w-5/6 flex flex-wrap mb-5 justify-between">
-          <div className="pr-0 flex flex-col gap-5 w-full mb-4 desktop:w-2/4  desktop:pr-12 ">
+      <div className="flex flex-col items-center mt-20">
+        <main className="w-5/6  min-h-[80vh] flex flex-wrap mb-5 justify-between">
+          <div className="pr-0 h-5/6 flex flex-col gap-5 w-full mb-4 desktop:w-2/4  desktop:pr-12 ">
             <Heading className="mb-3 text-center text-white-500 font-bold text-md desktop:text-2xl">
               Contato
             </Heading>
@@ -65,7 +65,7 @@ export default function Contato() {
             </div>
           </div>
 
-          <Form className="w-full desktop:w-1/2" />
+          <Form className="w-full  h-5/6 desktop:w-2/4" />
         </main>
       </div>
     </>

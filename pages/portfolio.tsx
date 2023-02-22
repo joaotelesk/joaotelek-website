@@ -18,8 +18,8 @@ export default function Portfolio() {
         <meta name="description" content="Pagina de contato" />
       </Head>
 
-      <div className="flex flex-col items-center mt-5 mb-10">
-        <main className="flex flex-col w-4/5  gap-10 items-center ">
+      <div className="flex flex-col items-center mt-20 mb-5 ">
+        <main className="flex min-h-[80vh] flex-col w-4/5  gap-10 items-center ">
           <div className="flex flex-col gap-5 desktop:w-3/4 justify-center items-center ">
             <Heading className="text-center mb-5 text-white-500 font-bold  text-md desktop:text-2xl">
               Portfólio
