@@ -182,12 +182,9 @@ export function Form({ className }: FormProps) {
             </Link>
           </div>
         </div>
+        <Toast />
+        {toastIsOpen && <Toast />}
       </form>
-      {toastIsOpen && (
-        <div className="flex justify-center">
-          <Toast />
-        </div>
-      )}
     </>
   );
 }

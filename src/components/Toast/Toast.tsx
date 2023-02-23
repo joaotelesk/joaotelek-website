@@ -3,7 +3,7 @@ export function Toast() {
     <>
       <div
         id="toast-simple"
-        className=" fixed top-0 flex mt-3  w-auto p-4 space-x-4 text-white-200 bg-white divide-x divide-white-500 rounded-lg shadow dark:text-white-400 dark:divide-white-200 space-x dark:bg-purple-500"
+        className=" fixed items-center top-0 flex mt-3  w-auto p-4 space-x-4 text-white-200 bg-white divide-x divide-white-500 rounded-lg shadow dark:text-white-400 dark:divide-white-200 space-x dark:bg-purple-500"
         role="alert"
       >
         <svg
