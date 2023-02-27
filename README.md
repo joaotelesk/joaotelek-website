@@ -7,51 +7,54 @@
 
 <h1 align="center">Portfólio</h1>
 
-Status
+<!-- Status
 
 <h4 align="center">
 	🚧   Under construction...  🚧
 </h4>
-<hr>
+<hr> -->
 
 <p align="center">
   <a href="#-sobre">Sobre</a> &#xa0; | &#xa0;
-  <a href="#Telas">Telas</a> &#xa0; | &#xa0;
   <a href="#skateboard-funcionalidades">Funcionalidades</a> &#xa0; | &#xa0;
   <a href="#rocket-tecnologias">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requisitos-para-rodar-a-aplicação">Requisitos</a> &#xa0; | &#xa0;
-  <a href="https://github.com/andrelinos" target="_blank">Autor</a>
+  <a href="https://github.com/joaotelesk" target="_blank">Autor</a>
 </p>
 
 <br>
 
-<!-- ## 🧠 Sobre
+## 🧠 Sobre
 
-O projeto foi desenvolvido em um desafio técnico no processo seletivo da MKS Desenvolvimento de Sistemas, onde a tarefa era desenvolver um projeto de marketplace consumindo a [API](https://mks-challenge-api-frontend.herokuapp.com/api-docs/#/Product/get_products) e [designer](https://www.figma.com/file/Z4z8osDbK1ET7cjNzFRMrK/MKS-Front-end-challenge?node-id=5%3A207&t=6uebScWQZ1h1vuYk-0) de produtos disponibilizada pela empresa.
+### As atividades do projeto:
 
-<br/>
+- Definição dos requisitos do seu website pessoal, como a apresentação de suas informações de contato, portfólio e conteúdo.
+- Escolha das tecnologias: Next.js, TypeScript, Tailwind, GraphQL, Storybook.
+- Criação e definição do design e layout do site utilizando Figma.
 
-## 📱 Telas
+### Os objetivos do projeto:
 
-[Desktop]()
-<img src="./public/desktop-1.png" alt="pagina home" />
-<img src="./public/desktop-2.png" alt="pagina home" />
-<br/>
+- O principal objetivo do projeto era criar um website pessoal onde eu pudesse expor os meus trabalhos tanto para recrutadores como para possíveis clientes freelancer.
+- Desenvolver um projeto em que pudesse expor a prática com as tecnologias escolhidas e habilidades de UI/UX.
 
-[Mobile]()
+### Os resultados do projeto:
 
-<div width="100vh"><img src="./public/mobile-1.png" alt="pagina home" width="auto" />
-<img src="./public/mobile-2.png" alt="pagina home" width="auto"/><div/>
+- O projeto resultou em um website pessoal funcional que atende aos seus requisitos.
+- Disponibilizar o código-fonte e do layout do website pessoal no GitHub e no Linkedin, para contribuiu comunidade de programação, permitindo que outros desenvolvedores possam se inspirar e aprender com o meu trabalho.
 
-<br/>
+Links:
+
+- [Site](https://joaotelesk.tech/)
+- [Github](https://github.com/joaotelesk/joaotelek-website)
+- [Figma](https://www.figma.com/file/8gc6e14rtoF0JoZGIDOuGp/joaotelesk.tech?t=DeKPylxo17NCwVGb-6)
+
+  <br/>
 
 ## 🛹 Funcionalidades
 
-✔️ cadastrar e remover items no carrinho
+✔️ Buscar projetos
 
-✔️ abrir e fechar o menu de carrinho
-
-✔️ incrementar e decrementar itens
+✔️ enviar formulario
 
 <br/>
 
@@ -61,29 +64,30 @@ Abaixo poderá ter acesso às principais tecnologias usadas neste projeto
 
 - [NextJS](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
-- [Redux toolkit](https://redux-toolkit.js.org/)
-- [Styled-components](https://styled-components.com/)
-- [jest](https://jestjs.io/pt-BR/) -->
+- [Storybook](https://storybook.js.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [GraphQL](https://graphql.org/)
+- [jest](https://jestjs.io/pt-BR/)
 
-<!-- ## ✅ Requisitos para rodar a aplicação
+## ✅ Requisitos para rodar a aplicação
 
 Antes de iniciar 🏁, você precisa ter [Git](https://git-scm.com) e [Node](https://nodejs.org/en/) instalado em seu sistema operacional.
 
-<br/> -->
-<!--
+<br/>
+
 ## 🏁 Iniciando
 
 ```bash
 # Clone este projeto
-$ git clone https://github.com/joaotelesk/marketplace
+$ git clone https://github.com/joaotelesk/joaotelek-website
 # Acesse
-$ cd marketplace
+$ cd joaotelek-website
 # Instale as dependências
 $ yarn
 # Execute o projeto
 $ yarn start
 # O projeto será inicializado em <http://localhost:3000>
-``` -->
+```
 
 <br/>
 
